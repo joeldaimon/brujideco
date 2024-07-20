@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Inicio del Head-->  
+<head>
+    <!-- Título de la página --> 
+    <title>Brujideco</title>
+
+    <!-- Fuentes de Google usadas en la Web-->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css' rel='stylesheet'/>    
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel='stylesheet'/>
+
+    <!-- Metatags -->
+    <meta content='Brujideco — Tu tienda esotérica' name='Title'/>
+    <meta content='tienda online, tienda esoterica, esoterismo, magia' name='keywords'/>
+    <meta content='Tienda esotérica.' name='description'/>
+    <meta content='es' name='language'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user- scalable=no">
+
+    <!-- Archivos externos -->
+    <link rel="stylesheet" href="brujiestilo.css"/> <!-- Archivo css -->
+    <script src="js/scripts.js"></script> <!-- Archivo JavaScript -->
+</head>
+
+<!-- Inicio del Body --> 
+<body>
+    <!-- Inicio del Encabezaado--> 
+    <div id="header">
+        <!-- Inicio del Logo--> 
+        <div id="logo">
+            <img alt="Logo Brujideco" src="img/logo.png"/> <!-- Imagen del logo -->
+        </div>
+        <!-- Elementos del Encabezado: titulo y enlaces sociales--> 
+        <div id="main-head">
+            <div id="logo-text">
+                <h1>BRUJIDECO</h1> <!-- Titulo -->
+                <h4>Tu tienda esotérica</h4> <!-- descripción -->
+            </div>
+            <!-- Enlaces a Redes sociales -->
+            <div id="rrss">
+                <!-- Font awesome es una fuente gratuita de Internet que te permite poner iconos en tu página web-->
+                <a href="https://tiktok.com/" target="_blank"><i class='fab fa-tiktok'></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a>
+            </div>
+        </div> 
+        <!-- Inicio del menú--> 
+        <div id="nav">
+            <!-- Lista desordenada-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="#articles">BLOG</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- Inicio de SECTION--> 
+        <div class="section">
+            <!-- Div para publicidad de la web --> 
+            <div id="blog-publi">
+                <!-- Enlace a categorias de la tienda usando JavaScript-->
+                <a href="tienda.html#velas"><img alt="velas" onmouseover="onVelas(this)" onmouseout="offVelas(this)" src="img/velas.png"/></a>
+                <a href="tienda.html#calderos"><img alt="calderos" onmouseover="onCalderos(this)" onmouseout="offCalderos(this)" src="img/calderos.png"/></a>
+                <a href="tienda.html#inciensos"><img alt="inciensos" onmouseover="onInciensos(this)" onmouseout="offInciensos(this)" src="img/incienso.png"/></a>
+                <a href="tienda.html#libros"><img alt="libros" onmouseover="onLibros(this)" onmouseout="offLibros(this)" src="img/libros.png"/></a>
+                <a href="tienda.html#minerales"><img alt="minerales" onmouseover="onMinerales(this)" onmouseout="offMinerales(this)" src="img/minerales.png"/></a>
+                <!-- Cuando el usuario pasa el raton por encima, la imagen cambia, y si deja de estar el ratón encima de una de estas imagenes, vuelve a la imagen original-->
+                <!-- Es como el HOVER en CSS-->
+            </div>
+            <!-- Promoción de un producto en concreto (Posible Slider para el futuro)--> 
+            <div id="promo">
+                <a href="tienda.html#minerales"><img alt="Promocion minerales" src="img/promo.png"/></a>
+            </div>
+        </div>
+
+        <!-- Otra seccion --> 
+        <div class="section">
+            <h1>Blog de Brujideco</h1>
+            <!-- Inicio del BLOG--> 
+            <div id="articles">
+            <!-- Primer artículo -->
+            <div class="article">
+                <img alt="Articulol velas" src="img/art1.png"/>
+                <a href="article1.html"><h2>Magia con velas</h2></a> <!-- Enlace que se abre en misma pestaña -->
+                <p>En Roma se utilizaban hachas de cera en los santuarios paganos que especialmente eran ofrecidas en los saturnales. 
+                    También las lámparas que figuraban entre las insignias de los prefectos del pretorio en el siglo IV eran antorchas de cera
+                    puestas sobre candelabros. Pero la vela o el cirio empieza a tener
+                    no sólo una utilidad práctica para iluminar durante la noche, sino también un sentido místico, mágico y religioso.</p>
+                <span><a href="article1.html" target="_blank">LEER MÁS</a></span> <!-- Enlace que se abre en otra pestaña -->
+            </div>
+            <!-- Segundo artículo -->
+            <div class="article">
+                <img alt="Articulol tarot" src="img/art2.png"/>
+                <a href="article2.html"><h2>Tarot interactivo</h2></a> <!-- Enlace que se abre en misma pestaña -->
+                <p>El tarot es una baraja de naipes a menudo utilizada como medio de consulta e interpretación de hechos (presentes, pasados o futuros),
+                    sueños,​ percepciones o estados emocionales que constituye, además, un tipo de cartomancia. Sus orígenes datan al menos del siglo XIV.
+                    La técnica se basa en la selección de cartas de una baraja especial, 
+                    que luego son interpretadas por un lector, según el orden seleccionado. </p>
+                <span><a href="article2.html" target="_blank">LEER MÁS</a></span> <!-- Enlace que se abre en otra pestaña -->
+            </div>
+            <!-- Tercer artículo -->
+            <div class="article">
+                <img alt="Articulol astrologia" src="img/art3.png"/>
+                <a href="article3.html"><h2>Astrología mágica</h2></a> <!-- Enlace que se abre en misma pestaña -->
+                <p>La astrología es el arte de interpretar la configuración y ubicación relativa de los astros y sus constelaciones, con fines adivinatorios,
+                    psicológicos o simplemente como una forma de hallar patrones útiles dentro de la realidad.
+                    El término proviene del griego astrón, “estrella”, y lógos, “discurso”. Se trata de una práctica milenaria compartida por muchas
+                    civilizaciones distintas, como la china, la hindú o la occidental.</p>
+                <span><a href="article3.html" target="_blank">LEER MÁS</a></span> <!-- Enlace que se abre en otra pestaña -->
+            </div>
+            </div>
+        </div>
+
+        <!-- Inicio del FOOTER--> 
+        <div id="footer">
+            <p>
+                <em>Nombre: </em>Joel Guerrero Cobo.
+            </p>
+            <p>
+                <em>Instituto: </em>IES Serra Perenxisa.
+            </p>
+            <p>
+                <em>Fecha de inicio: </em>22/04/2023.
+            </p>
+            <p>
+                <em>Fecha de finalización: </em>06/05/2023.
+            </p>
+        </div>
+</body>
+</html>

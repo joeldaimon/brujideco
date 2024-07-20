@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <title>Brujideco</title>
+    <meta charset="UTF-8">
+
+<!-- Fuentes de Google -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css' rel='stylesheet'/>    
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel='stylesheet'/>
+
+<!-- Archivos externos -->
+<link rel="stylesheet" href="brujiestilo.css"/> <!-- Archivo css -->
+<script src="js/scripts.js"></script> <!-- Archivo JavaScript -->
+</head>
+
+<!-- Inicio del Body--> 
+<body>
+    <!-- Inicio del Encabezaado--> 
+    <div id="header">
+        <!-- Inicio del Logo--> 
+        <div id="logo">
+            <img alt="Logo Brujideco" src="img/logo.png"/> <!-- Imagen del logo -->
+        </div>
+        <!-- Elementos del Encabezado: titulo y enlaces sociales--> 
+        <div id="main-head">
+            <div id="logo-text">
+                <h1>BRUJIDECO</h1> <!-- Titulo -->
+                <h4>Tu tienda esotérica</h4> <!-- descripción -->
+            </div>
+            <!-- Enlaces a Redes sociales -->
+            <div id="rrss">
+                <!-- Font awesome es una fuente gratuita de Internet que te permite poner iconos en tu página web-->
+                <a href="https://tiktok.com/" target="_blank"><i class='fab fa-tiktok'></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a>
+            </div>
+        </div> 
+        <!-- Inicio del menú--> 
+        <div id="nav">
+            <!-- Lista desordenada-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="index.html#articles">BLOG</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inicio de SECTION--> 
+    <div id="section">
+        <!-- Div para publicidad de la web --> 
+        <div id="blog-publi">
+             <!-- Enlace a categorias de la tienda usando JavaScript-->
+            <a href="tienda.html#velas"><img alt="velas" onmouseover="onVelas(this)" onmouseout="offVelas(this)" src="img/velas.png"/></a>
+            <a href="tienda.html#calderos"><img alt="calderos" onmouseover="onCalderos(this)" onmouseout="offCalderos(this)" src="img/calderos.png"/></a>
+            <a href="tienda.html#inciensos"><img alt="inciensos" onmouseover="onInciensos(this)" onmouseout="offInciensos(this)" src="img/incienso.png"/></a>
+            <a href="tienda.html#libros"><img alt="libros" onmouseover="onLibros(this)" onmouseout="offLibros(this)" src="img/libros.png"/></a>
+            <a href="tienda.html#minerales"><img alt="minerales" onmouseover="onMinerales(this)" onmouseout="offMinerales(this)" src="img/minerales.png"/></a>
+            <!-- Cuando el usuario pasa el raton por encima, la imagen cambia, y si deja de estar el ratón encima de una de estas imagenes, vuelve a la imagen original-->
+            <!-- Es como el HOVER en CSS-->
+        </div>
+    </div>
+
+    <!-- Inicio del Outter -->
+    <div id="outter">
+        <!-- Inicio del artículo -->
+        <article>
+            <h1>Magia con velas</h1>
+            <!-- Div que contiene imagen - Para cada artículo es diferente, por eso tiene Class y Id -->
+            <div class="art-img" id="art1"></div>
+            <p>
+                En Roma se utilizaban hachas de cera en los santuarios paganos que especialmente eran ofrecidas en los saturnales. También las lámparas que figuraban entre las insignias de los prefectos del pretorio en el siglo IV eran antorchas de cera puestas sobre candelabros.
+
+                Pero la vela o el cirio empieza a tener no sólo una utilidad práctica para iluminar durante la noche, sino también un sentido místico, mágico y religioso. En pinturas de primitivas catacumbas aparecen cirios sobre los altares, especialmente en los de los mártires, tal vez copiando costumbres paganas como los saturnales.
+
+                La vela ha tenido un importante protagonismo en la magia, antiguamente este instrumento de iluminación era buscado ansiosamente, hasta el punto de que en los siglos XVII y XVIII se realizaban importantes subastas de velas.
+            </p>
+            <h2>Velas zodiacales</h2>
+            <ul>
+                <li>Aries - Rojo</li>
+                <li>Tauro - Verde</li>
+                <li>Geminis - Amarillo</li>
+                <li>Cáncer - Blanco</li>
+                <li>Leo - Naranja</li>
+                <li>Virgo - Marrón</li>
+                <li>Libra - Rosa</li>
+                <li>Escorpión - Rojo</li>
+                <li>Sagitario - Púrpura</li>
+                <li>Capricornio - Verde Oscuro</li>
+                <li>Acuario - Azul Eléctrico</li>
+                <li>Piscis - Lila o Verde Mar</li>
+            </ul>
+            <hr>
+        </article>
+        
+        <!-- Inicio del ASIDE -->
+        <aside>
+        <!-- Plugin: elemento del Aside-->
+        <div class="plugin">
+            <h2>Categorías</h2>
+            <!--Lista ordenada-->
+            <ol>
+                <li><a href="tienda.html#minerales">Minerales</a></li>
+                <li><a href="tienda.html#velas">Velas</a></li>
+                <li><a href="tienda.html#inciensos">Inciensos</a></li>
+                <li><a href="tienda.html#libros">Libros</a></li>
+                <li><a href="tienda.html#calderos">Calderos</a></li>
+            </ol>
+        </div>
+        <!-- Plugin: elemento del Aside-->
+        <div class="plugin">
+            <h2>Páginas</h2>
+            <!--Lista desordenada-->
+            <ul>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html#articles">Blog</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Plugin: elemento del Aside-->
+        <div class="plugin">
+            <h2>Contacto</h2>
+            <p>
+                <b>Nombre: </b>Joel Guerrero<br/>
+                <b>Email: </b><a href="mailto:brujideco@brujideco.com">brujideco@brujideco.com</a><br/>
+                <b>Dirección: </b>C/ Falsa, 1, 2, Valencia<br/>
+                <b>Teléfono: </b>555-666-777<br/>
+            </p>
+        </div>
+        </aside>
+    </div>
+
+    <!-- Inicio del footer -->
+    <div id="footer">
+        <p>
+            <em>Nombre: </em>Joel Guerrero Cobo.
+        </p>
+        <p>
+            <em>Instituto: </em>IES Serra Perenxisa.
+        </p>
+        <p>
+            <em>Fecha de inicio: </em>22/04/2023.
+        </p>
+        <p>
+            <em>Fecha de finalización: </em>06/05/2023.
+        </p>
+    </div>
+</body>
+</html>

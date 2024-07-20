@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>Brujideco - Contacto</title>
+    <meta charset="UTF-8">
+
+<!-- Fuentes de Google -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css' rel='stylesheet'/>    
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel='stylesheet'/>
+
+<!-- Archivos externos -->
+<link rel="stylesheet" href="brujiestilo.css"/> <!-- Archivo css -->
+<script src="js/scripts.js"></script> <!-- Archivo JavaScript -->
+</head>
+
+<!-- Inicio del Body--> 
+<body>
+    <!-- Inicio del Encabezaado--> 
+    <div id="header">
+        <!-- Inicio del Logo--> 
+        <div id="logo">
+            <img alt="Logo Brujideco" src="img/logo.png"/> <!-- Imagen del logo -->
+        </div>
+        <!-- Elementos del Encabezado: titulo y enlaces sociales--> 
+        <div id="main-head">
+            <div id="logo-text">
+                <h1>BRUJIDECO</h1> <!-- Titulo -->
+                <h4>Tu tienda esotérica</h4> <!-- descripción -->
+            </div>
+            <!-- Enlaces a Redes sociales -->
+            <div id="rrss">
+                <!-- Font awesome es una fuente gratuita de Internet que te permite poner iconos en tu página web-->
+                <a href="https://tiktok.com/" target="_blank"><i class='fab fa-tiktok'></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a>
+            </div>
+        </div> 
+        <!-- Inicio del menú--> 
+        <div id="nav">
+            <!-- Lista desordenada-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="index.html#articles">BLOG</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inicio de SECTION--> 
+    <div id="section">
+        <!-- Div para publicidad de la web --> 
+        <div id="blog-publi">
+             <!-- Enlace a categorias de la tienda usando JavaScript-->
+            <a href="tienda.html#velas"><img alt="velas" onmouseover="onVelas(this)" onmouseout="offVelas(this)" src="img/velas.png"/></a>
+            <a href="tienda.html#calderos"><img alt="calderos" onmouseover="onCalderos(this)" onmouseout="offCalderos(this)" src="img/calderos.png"/></a>
+            <a href="tienda.html#inciensos"><img alt="inciensos" onmouseover="onInciensos(this)" onmouseout="offInciensos(this)" src="img/incienso.png"/></a>
+            <a href="tienda.html#libros"><img alt="libros" onmouseover="onLibros(this)" onmouseout="offLibros(this)" src="img/libros.png"/></a>
+            <a href="tienda.html#minerales"><img alt="minerales" onmouseover="onMinerales(this)" onmouseout="offMinerales(this)" src="img/minerales.png"/></a>
+            <!-- Cuando el usuario pasa el raton por encima, la imagen cambia, y si deja de estar el ratón encima de una de estas imagenes, vuelve a la imagen original-->
+            <!-- Es como el HOVER en CSS-->
+        </div>
+    </div>
+
+    <!-- Inicio del Outter -->
+    <div id="outter">
+        <h1>Formulario de Contacto</h1>
+        <!-- Inicio del formulario de contacto -->
+        <form id="formulario">
+            <p>
+                <!-- Datos del cliente-->
+                <label for="nombre">Nombre:</label> <!-- Etiqueta -->
+                <input type="text" id="nombre" name="nombre"><br/> <!-- Input tipo texto -->
+                <label for="apellidos">Apellidos:</label> <!-- Etiqueta -->
+                <input type="text" id="apellidos" name="apellidos"><br/> <!-- Input tipo texto -->
+                <label for="email">Email:</label> <!-- Etiqueta -->
+                <input type="text" id="email" name="email"><br/><br/> <!-- Input tipo texto -->
+            </p>
+
+            <label for="nombre">Razón por la que contactas con nosotros:</label> <!-- Etiqueta -->
+            
+            <!--Checkbox -->
+            <p><input type="checkbox" id="producto" name="checkbox" value="producto"> <!-- Opción 1 del CheckBox-->
+            <label for="producto">Adquirir producto</label></p>
+            <p><input type="checkbox" id="servicio" name="checkbox" value="servicio"> <!-- Opción 2 del CheckBox-->
+            <label for="servicio">Adquirir servicio</label></p>
+            <p><input type="checkbox" id="Otro" name="checkbox" value="Otro"> <!-- Opción 3 del CheckBox-->
+            <label for="Otro">Otro</label></p> 
+            <!-- Un checkbox sirve para elegir una o varias opciones a la vez-->
+            
+            
+            
+            <textarea name="comentario">Escriba aquí su mensaje</textarea> <!-- Area de texto para escribir mensaje-->
+            
+            <input id="BotonEnviar" onclick="enviado()" type="submit" value="ENVIAR"> <!-- Botón para enviar mensaje con JavaScript-->
+            <!-- Este botón al darle click, cambia el Form e imprime un mensaje de "Mensaje enviado"-->
+
+        </form>
+    </div>
+
+    <!-- Inicio del footer -->
+    <div id="footer">
+        <p>
+            <em>Nombre: </em>Joel Guerrero Cobo.
+        </p>
+        <p>
+            <em>Instituto: </em>IES Serra Perenxisa.
+        </p>
+        <p>
+            <em>Fecha de inicio: </em>22/04/2023.
+        </p>
+        <p>
+            <em>Fecha de finalización: </em>06/05/2023.
+        </p>
+    </div>
+</body>
+</html>

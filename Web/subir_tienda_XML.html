@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <div id="bookForm">
+        <input id="books" type="file" onChange="loadDoc(event)">
+        <label for="books">Cargar archivo</label>
+      </div>
+      
+      <table id="bookTable">
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cualidades</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td colspan="4" style="text-align: center"></td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <br><br>
+    <script>
+
+        function loadDoc(e) {
+        const file = e.target.files[0];
+
+        if (!file) {
+            throw new Error('You need to choose an XML file first')
+            alert('You need to choose an XML file first')
+            return false
+        }
+        
+        readDoc(file).then(parseDoc).then(showDocInTable).catch(onError)
+        console.log(file.name);
+      
+        }
+
+        
+
+        function readDoc(file) {
+        const reader = new FileReader()
+
+        return new Promise((ok) => {
+            reader.readAsText(file)
+            reader.onload = function() {
+            ok(reader.result)
+            }
+        })
+        }
+
+        function parseDoc(rawXML) {
+        const parser = new DOMParser()
+        const xml = parser.parseFromString(rawXML, 'text/html')
+        return xml
+        }
+
+        function showDocInTable(xml) {
+        const table = document.querySelector('#bookTable > tbody')
+        const datasource = xml.querySelector('tienda')
+        const tienda = datasource.querySelectorAll('producto')
+
+        table.removeChild(table.children[0])
+
+        Array.from(tienda).map((book, i) => {
+            const tr = document.createElement('tr')
+            const img = tagToData(book.querySelector('imatge'))
+            const nombre = tagToData(book.querySelector('nombre'))
+            const precio = tagToData(book.querySelector('precio'))
+            const cualidades = tagToData(book.querySelector('cualidades'))
+
+            tr.append(img, nombre, precio, cualidades)
+            table.appendChild(tr)
+        })
+        }
+
+        function tagToData(tag) {
+        const td = document.createElement('td')
+        td.textContent = tag.textContent
+        return td
+        }
+
+        function onError(reason) {
+        console.error(reason)
+        }
+    </script>
+</html>

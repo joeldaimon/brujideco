@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="html/xsl" href="servicios.xsl"?>
+<servicios>
+<servicio categoria="ASTROLOGIA">
+    <nombre>Carta tropical</nombre>
+    <precio>55€</precio>
+    <método>Escrita y videollamada</método>
+    <cita>Disponible</cita>
+</servicio>
+<servicio categoria="ASTROLOGIA">
+    <nombre>Carta dracónica</nombre>
+    <precio>77€</precio>
+    <método>videollamada</método>
+    <cita>Disponible</cita>
+</servicio>
+<servicio categoria="TAROT">
+    <nombre>Tarot futuro</nombre>
+    <precio>22€</precio>
+    <método>Videollamada</método>
+    <cita>Disponible</cita>
+</servicio>
+<servicio categoria="OTROS">
+    <nombre>Carta numerológica</nombre>
+    <precio>22€</precio>
+    <método>Escrita</método>
+    <cita>No disponible</cita>
+</servicio>
+<servicio categoria="TAROT">
+    <nombre>Videorespuesta</nombre>
+    <precio>5€</precio>
+    <método>Vídeo</método>
+    <cita>No disponible</cita>
+</servicio>
+<servicio categoria="OTROS">
+    <nombre>Interpretacion de sueños</nombre>
+    <precio>5€</precio>
+    <método>Vídeo</método>
+    <cita>No disponible</cita>
+</servicio>
+<servicio categoria="ASTROLOGIA">
+    <nombre>Sinastría</nombre>
+    <precio>75€</precio>
+    <método>Escrita y Videollamada</método>
+    <cita>Disponible</cita>
+</servicio>
+<servicio categoria="ASTROLOGIA">
+    <nombre>Revolución solar</nombre>
+    <precio>22€</precio>
+    <método>Videollamada</método>
+    <cita>No disponible</cita>
+</servicio>
+</servicios>

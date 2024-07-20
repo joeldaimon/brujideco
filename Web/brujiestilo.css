@@ -1,0 +1,545 @@
+/*  PRNCIPALES */
+
+body {
+    padding: 0px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 25px; /* cambia tamaño del texto */
+    border: 10px double #e79fc3; /* añade un borde doble */
+    text-transform: uppercase; /* convierte el texto a mayúsculas */
+}
+
+h2 {
+    font-size: 22px;
+    border-radius: 3px; /* redondea los bordes */
+    padding: 5px; /* crea unos margenes internos */
+    border-left: 20px solid #e79fc3; /* borde izquierdo */
+    border-right: 20px solid #e79fc3; /* borde derecho */
+    border-bottom: 3px solid black; /* borde inferior */
+}
+
+h3 {
+    font-size: 18px;
+    border-bottom: 3px solid #e79fc3;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+ol li {
+    list-style: decimal; /* estilo de la lista */
+}
+
+#outter {
+    margin:0 auto; /* margenes externos */
+    width:100%; /* ancho */
+}
+
+#outter h1{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center; /* alineamiento del texto: centrado */
+    letter-spacing: 5px; /* espacio entre las letras */
+    padding: 20px;
+}
+
+table {
+    margin:20px;
+}
+
+table img {
+    width: 50px;
+}
+
+th {
+    background: #e79fc3; /* color de fondo */
+    padding:20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white; /* color de texto */
+}
+
+#XSLTable {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+#XSLTable table {
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #e79fc3;
+}
+
+a:link, a:visited, a:active { 
+    text-decoration:none; /* decoración del texto: ninguna */
+}
+
+/* SELECTORES */
+
+* { /* universal */
+    font-family: Arial, sans-serif; /* fuente del texto */
+    font-size: 14px;
+}
+
+p a { /* afecta a enlaces dentro de p */
+    text-decoration:underline;
+}
+
+::marker {
+    color: #e79fc3;
+    font-size: 20px;
+}
+
+::selection {
+    background: #e3ffd0;
+    color: black;
+}
+
+/* HEAD */
+#header {
+    height: 300px; /* altura */
+}
+#logo {
+    float: left; /* posición: izquierda */
+    width: 30%; 
+}
+#logo img {
+    width: 80%;
+}
+#main-head{
+    width: 100%;
+}
+#logo-text {
+    float: left; 
+    width: 50%;
+}
+#header h1{
+    font-family: serif;
+    font-size: 60px;
+    margin-bottom: 0px;
+    border: unset;
+}
+#header h4{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #e79fc3;
+    letter-spacing: 3px;
+}
+#rrss{
+    width: 20%;
+    float: right;
+    margin-top: 50px;
+}
+
+/* FONT AWESOME */
+
+.fab {
+    width: 30px;
+    border: 2px solid #e79fc3;
+    font-size: 18px;
+    color: #e79fc3;
+    text-align: center;
+    line-height: 30px; /* separación entre lineas */
+    padding: 0;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: color .17s ease; /* transición de color */
+}
+
+.fab:hover{
+    background: #e79fc3;
+    color: black;
+}
+
+/* MENU */
+#nav{
+    width: 70%;
+    height: 60px;
+    background: #e79fc3;
+    float: right;
+}
+
+#nav li {
+    float: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 10px;
+    list-style: none;
+    font-weight: 600; /* "peso" del texto */
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+    margin-left: 5px; /* margenes externos izquierdos */
+    margin-top: -2px; /* margenes externos superiores */
+}
+
+#nav li:first-child {
+    background: #e3ffd0;
+    color: black;
+    border-radius: 10px 100px 10px 100px;
+}
+
+
+#nav li:first-child:hover {
+    border-radius: 100px 10px 100px 10px;
+}
+
+#nav li:hover {
+    background: white;
+    color: #e79fc3;
+}
+
+#nav a {
+    text-decoration: none;
+    color: inherit; /* inherit significa que hereda el color */
+    font-size: inherit;
+}
+
+/* SECTION */
+
+.section {
+    width: 100%;
+}
+.section h1{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+#blog-publi {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block; /* bloque en linea pero respetando márgenes */
+    text-align: center;
+    padding: 10px 0px;
+    background: black;
+}
+#blog-publi img {
+    width: 150px;
+    padding-left: 30px;
+}
+#promo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+/* ARTICLE */
+#articles {
+    background: #e3ffd0;
+    width: 100%; 
+    margin: 0 auto;
+    display: flex; /* transforamción de elementos del bloque como si fueran celdas de una tabla */
+    min-height: 600px;
+    padding: 30px 0px;
+}
+
+.article{
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.article img {
+    width: 300px;
+}
+
+.article img:hover {
+    opacity: 0.5; /* opacidad */
+}
+
+.article p{
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+.article a h2 {
+    text-decoration: none;
+    color: black;
+}
+
+.article a h2:hover {
+    color: #e79fc3;
+}
+
+.article span a {
+    padding: 10px;
+    border: 2px solid #e79fc3;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #e79fc3;
+    border-radius: 3px;
+}
+
+.article span a:hover {
+    padding: 10px;
+    background:  #e79fc3;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+}
+
+
+
+/* FOOTER */
+#footer {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+/* ARTICULO */
+article {
+    margin: 10px 10px 10px 50px;
+    width: 60%;
+    float: left;
+}
+article p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+}
+.art-img{
+    width: 100%;
+    height: 300px;
+    background-position: left; /* posicion del fondo */
+}
+#art1{background-image: url(img/art1.png);} /* imagen de fondo */
+#art2{background-image: url(img/art2.png);}
+#art3{background-image: url(img/art3.png);}
+
+/* ASIDE */
+aside {
+    width: 22%;
+    float: right;
+    margin: 20px;
+}
+
+/* TIENDA */
+#tienda {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row-tienda {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.item-tienda{
+    background: #e79fc3;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+.item-tienda img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.item-tienda img:hover{
+    opacity: 0.6;
+}
+
+.item-tienda a{
+    padding: 20px;
+    background: white;
+    display: block; /* situamos los elementos uno detrças del otro */
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 3px;
+}
+
+.item-tienda h3 {
+    text-transform: uppercase;
+}
+
+/* SERVICIOS */
+#servicios {
+    text-align: center;
+}
+#servicios table {
+    width: 80%;
+    margin: 20px auto !important; /* Important: que esta norma debe cumplirse sí o si */
+}
+#servicios table li {
+    text-align: justify;
+    padding: 10px;
+}
+#servicios button {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#servicios button:hover {
+    background: #e3ffd0;
+}
+
+/* CONTACTO FORMULARIO */
+
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e3ffd0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#datosUser {
+    margin: 10px;
+    width: 50%;
+}
+form label{
+    font-size: 20px;
+}
+form textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+}
+form p {
+    margin: 20px auto;
+}
+form span {
+    font-size: 20px;
+    padding:10px;
+}
+form #BotonEnviar{
+    margin: 20px 0px;
+    background: #e79fc3;
+    border: 2px solid #e79fc3;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+form #BotonEnviar:hover {
+    background: none;
+    color: #e79fc3;
+}
+
+
+/* RESPONSIVE CSS */
+
+/* tables, pantallas pequeñas... */
+@media all and (max-width: 810px){
+    #nav{
+        height: unset;
+    }
+    #promo img{
+        width: 90%;
+    }
+    #articles{
+        display: block;
+    }
+}
+
+/* Dispositivos móviles */
+@media all and (max-width: 480px) {
+    /* ENCABEZADO */
+    #header h1 {
+        font-size: 30px;
+    }
+
+    #rrss {
+        margin-top: 10px;
+    }
+
+    /* MENU */
+    #nav {
+        width: 100%;
+        float: left;
+        height: unset;
+    }
+    #nav li{
+        float: unset;
+        width: 50%;
+    }
+
+    /* SECCIONES */
+    #promo img{
+        width: 90%;
+    }
+    #articles {
+        display: block;
+    }
+
+    /* TIENDA */
+    #tienda{
+        width:100%;
+    }
+    .row-tienda {
+        display: block;
+    }
+    .item-tienda {
+        width: 70%;
+    }
+
+    #XSLTable { display: none;} /* Desactivamos la tabla ya que no se visualiza correctamente */
+
+    /* SERVICIOS */
+    table {
+        margin: 10px;
+    }
+    th {
+        font-size: 15px;
+    }
+
+    #servicios button {
+        width: 50%;
+      }
+
+    /* CONTACTO */
+    form {
+        text-align: left;
+    }
+    /* ARTICULOS */
+    article {
+        margin: 10px auto;
+        width: 90%;
+        float: unset;
+    }
+    .art-img {
+        background-position: center;
+    }
+    /* ASIDE */
+    aside {
+        width: 90%;
+        float: unset;
+        margin-top: 50px;
+    }
+}
+
+
+    

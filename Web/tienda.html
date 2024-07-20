@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+    <title>Brujideco</title>
+    <meta charset="UTF-8">
+
+<!-- Fuentes de Google -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css' rel='stylesheet'/>    
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel='stylesheet'/>
+
+<!-- Archivos externos -->
+<link rel="stylesheet" href="brujiestilo.css"/> <!-- Archivo css -->
+<script src="js/scripts.js"></script> <!-- Archivo JavaScript -->
+</head>
+
+<!-- Inicio del Body--> 
+<body>
+    <!-- Inicio del Encabezaado--> 
+    <div id="header">
+        <!-- Inicio del Logo--> 
+        <div id="logo">
+            <img alt="Logo Brujideco" src="img/logo.png"/> <!-- Imagen del logo -->
+        </div>
+        <!-- Elementos del Encabezado: titulo y enlaces sociales--> 
+        <div id="main-head">
+            <div id="logo-text">
+                <h1>BRUJIDECO</h1> <!-- Titulo -->
+                <h4>Tu tienda esotérica</h4> <!-- descripción -->
+            </div>
+            <!-- Enlaces a Redes sociales -->
+            <div id="rrss">
+                <!-- Font awesome es una fuente gratuita de Internet que te permite poner iconos en tu página web-->
+                <a href="https://tiktok.com/" target="_blank"><i class='fab fa-tiktok'></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a>
+            </div>
+        </div> 
+        <!-- Inicio del menú--> 
+        <div id="nav">
+            <!-- Lista desordenada-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="index.html#articles">BLOG</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inicio de SECTION--> 
+    <div id="section">
+        <!-- Div para publicidad de la web --> 
+        <div id="blog-publi">
+             <!-- Enlace a categorias de la tienda usando JavaScript-->
+            <a href="tienda.html#velas"><img alt="velas" onmouseover="onVelas(this)" onmouseout="offVelas(this)" src="img/velas.png"/></a>
+            <a href="tienda.html#calderos"><img alt="calderos" onmouseover="onCalderos(this)" onmouseout="offCalderos(this)" src="img/calderos.png"/></a>
+            <a href="tienda.html#inciensos"><img alt="inciensos" onmouseover="onInciensos(this)" onmouseout="offInciensos(this)" src="img/incienso.png"/></a>
+            <a href="tienda.html#libros"><img alt="libros" onmouseover="onLibros(this)" onmouseout="offLibros(this)" src="img/libros.png"/></a>
+            <a href="tienda.html#minerales"><img alt="minerales" onmouseover="onMinerales(this)" onmouseout="offMinerales(this)" src="img/minerales.png"/></a>
+            <!-- Cuando el usuario pasa el raton por encima, la imagen cambia, y si deja de estar el ratón encima de una de estas imagenes, vuelve a la imagen original-->
+            <!-- Es como el HOVER en CSS-->
+        </div>
+    </div>
+
+
+    <!-- Inicio del Outter -->
+    <div id="outter">
+        <h1>Tienda online</h1>
+        <!-- Inicio dela tienda-->
+        <div id="tienda">
+            <h2 id="velas">Velas</h2>
+            <!-- Cada row-tienda es una categoría de la tienda - En este caso VELAS -->
+            <div class="row-tienda">
+                <!-- Cada item-tienda es un producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/vela-arcoiris.jpg" alt="Vela arcoiris"/>
+                    <h3>VELA ARCOIRIS</h3>
+                    <p>Precio: 1.50</p>
+                    <p>Cualidades: Manifestar</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/vela-blanca.jpg" alt="Vela blanca"/>
+                    <h3>VELA BLANCA</h3>
+                    <p>Precio: 0.50</p>
+                    <p>Cualidades: Protección</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/vela-roja.jpg" alt="Vela roja"/>
+                    <h3>VELA ROJA</h3>
+                    <p>Precio: 0.50</p>
+                    <p>Cualidades: Amor</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <h2 id="calderos">Calderos</h2>
+            <!-- categoría Calderos -->           
+            <div class="row-tienda">
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->      
+                    <img src="img/Productos/caldero-arbol.jpg" alt="Caldero árbol"/>
+                    <h3>CALDERO ÁRBOL</h3>
+                    <p>Precio: 13.50</p>
+                    <p>Cualidades: Rituales</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/caldero-estrella.jpg" alt="Caldero estrella"/>
+                    <h3>CALDERO ESTRELLA</h3>
+                    <p>Precio: 18.50</p>
+                    <p>Cualidades: Rituales</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/caldero-wicca.jpg" alt="Caldero wicca"/>
+                    <h3>CALDERO WICCA</h3>
+                    <p>Precio: 8.50</p>
+                    <p>Cualidades: Rituales</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <h2 id="inciensos">Inciensos</h2>
+            <!-- categoría Inciensos -->           
+            <div class="row-tienda">
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/palo-santo.jpg" alt="Palo santo"/>
+                    <h3>PALO SANTO</h3>
+                    <p>Precio: >1.00</p>
+                    <p>Cualidades: Limpieza</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/ruda.jpg" alt="Ruda"/>
+                    <h3>RUDA</h3>
+                    <p>Precio: 0.70</p>
+                    <p>Cualidades: Limpieza</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->          
+                    <img src="img/Productos/salvia.jpg" alt="Salvia"/>
+                    <h3>SALVIA</h3>
+                    <p>Precio: 2.00</p>
+                    <p>Cualidades: Limpieza</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <h2 id="libros">Libros</h2>
+            <!-- categoría Libros -->           
+            <div class="row-tienda">
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/bruja-moderna.jpg" alt="Bruja moderna"/>
+                    <h3>El libro de la Bruja Moderna</h3>
+                    <p>Precio: 15.50</p>
+                    <p>Cualidades: Rituales</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/libro-talismanes.jpg" alt="Libro talismanes"/>
+                    <h3>Guía de Amuletos y talismanes</h3>
+                    <p>Precio: 13.50</p>
+                    <p>Cualidades: Protección</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/libro-wicca.jpg" alt="Libro wicca"/>
+                    <h3>Wicca: Libro de los hechizos</h3>
+                    <p>Precio: 17.50</p>
+                    <p>Cualidades: Rituales</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <h2 id="minerales">Minerales</h2>
+            <!-- categoría Minerales -->           
+            <div class="row-tienda">
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/cuarzo-rosa.jpg" alt="Cuarzo rosa"/>
+                    <h3>CUARZO ROSA</h3>
+                    <p>Precio: 1.50</p>
+                    <p>Cualidades: Limpieza</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/lapislazuli.jpg" alt="Lapislazuli"/>
+                    <h3>LAPISLAZULI</h3>
+                    <p>Precio: 1.50</p>
+                    <p>Cualidades: Protección</p>
+                    <a href="#">comprar</a>
+                </div>
+                <!-- Producto-->
+                <div class="item-tienda">
+                    <!-- Datos del producto-->
+                    <img src="img/Productos/turmalina.jpg" alt="Turmalina"/> 
+                    <h3>TURMALINA</h3>
+                    <p>Precio: 1.50</p>
+                    <p>Cualidades: Protección</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabña generada con XSL-->
+        <div id="XSLTable">
+            <h1>Tabla generada con XSL</h1>
+            <table>
+                <tr>
+                    <th style="text-align:left">Imagen</th>
+                    <th style="text-align:left">Producto</th>
+                    <th style="text-align:left">Precio</th>
+                    <th style="text-align:left">Cualidades</th>
+                    <th style="text-align:left">Stock</th>
+                </tr>
+                    <tr><td><img src="img/productos/cuarzo-rosa.jpg"/></td><td>Cuarzo rosa</td><td>1.50</td><td>Limpieza</td><td>50</td>
+                    </tr><tr><td><img src="img/productos/lapislazuli.jpg"/></td><td>Lapislazuli</td><td>1.50</td><td>Protección</td><td>50</td></tr>
+                    <tr><td><img src="img/productos/turmalina.jpg"/></td><td>Turmalina</td><td>1.50</td><td>Protección</td><td>50</td></tr>
+                    <tr><td><img src="img/productos/vela-arcoiris.jpg"/></td><td>Vela Arcoiris</td><td>1.50</td><td>Manifestar</td><td>20</td></tr>
+                    <tr><td><img src="img/productos/vela-blanca.jpg"/></td><td>Vela blanca</td><td>0.50</td><td>Protección</td><td>20</td></tr>
+                    <tr><td><img src="img/productos/vela-roja.jpg"/></td><td>Vela roja</td><td>0.50</td><td>Amor</td><td>20</td></tr>
+                    <tr><td><img src="img/productos/caldero-arbol.jpg"/></td><td>Caldero Árbol</td><td>13.50</td><td>Rituales</td><td>3</td></tr>
+                    <tr><td><img src="img/productos/caldero-estrella.jpg"/></td><td>Caldero con Estrella</td><td>18.50</td><td>Rituales</td><td>1</td></tr>
+                    <tr><td><img src="img/productos/caldero-wicca.jpg"/></td><td>Caldero de Wicca</td><td>8.50</td><td>Rituales</td><td>5</td></tr>
+                    <tr><td><img src="img/productos/bruja-moderna.jpg"/></td><td>El libro de magia de la Bruja Moderna</td><td>15.50</td><td>Rituales</td><td>1</td></tr>
+                    <tr><td><img src="img/productos/libro-talismanes.jpg"/></td><td>Guía completa de amuletos y talismanes</td><td>13.50</td><td>Protección</td><td>1</td></tr>
+                    <tr><td><img src="img/productos/libro-wicca.jpg"/></td><td>Wicca: Libro de los hechizos</td><td>17.50</td><td>Rituales</td><td>1</td></tr>
+                    <tr><td><img src="img/productos/palo-santo.jpg"/></td><td>Palo santo</td><td>1.00</td><td>Limpieza</td><td>15</td></tr>
+                    <tr><td><img src="img/productos/ruda.jpg"/></td><td>Ruda</td><td>0.70</td><td>Limpieza</td><td>20</td></tr>
+                    <tr><td><img src="img/productos/salvia.jpg"/></td><td>Salvia</td><td>2.00</td><td>Limpieza</td><td>15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        
+    <!-- Inicio del footer -->
+    <div id="footer">
+        <p>
+            <em>Nombre: </em>Joel Guerrero Cobo.
+        </p>
+        <p>
+            <em>Instituto: </em>IES Serra Perenxisa.
+        </p>
+        <p>
+            <em>Fecha de inicio: </em>22/04/2023.
+        </p>
+        <p>
+            <em>Fecha de finalización: </em>06/05/2023.
+        </p>
+    </div>
+</body>
+</html>
